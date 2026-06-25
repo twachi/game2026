@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Computer Game Development - Portfolio</title>
+  <style>
+    :root{
+      --bg1:#1a1a40;
+      --bg2:#4b0082;
+      --card:#ffffff;
+      --text:#222;
+      --accent1:#ff4d6d;
+      --accent2:#00d4ff;
+      --accent3:#ffd60a;
+      --accent4:#7bff00;
+    }
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+    }
+
+    body{
+      min-height:100vh;
+      background: linear-gradient(135deg,var(--bg1),var(--bg2));
+      color:#fff;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:24px;
+    }
+
+    .container{
+      width:min(960px,100%);
+      background: rgba(255,255,255,0.08);
+      border:2px solid rgba(255,255,255,0.2);
+      border-radius:24px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+      padding:32px;
+    }
+
+    .title{
+      text-align:center;
+      margin-bottom:10px;
+      font-size: clamp(1.4rem,2.5vw,2.2rem);
+      color: var(--accent3);
+      text-shadow: 0 3px 0 rgba(0,0,0,0.25);
+    }
+
+    .subtitle{
+      text-align:center;
+      margin-bottom:30px;
+      font-size: clamp(1rem,2vw,1.2rem);
+      color:#fff;
+    }
+
+    .labs{
+      display:grid;
+      grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+      gap:16px;
+    }
+
+    .lab-btn{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:88px;
+      border-radius:16px;
+      text-decoration:none;
+      font-size:1.2rem;
+      font-weight:700;
+      color:#111;
+      transition: transform .18s ease, box-shadow .18s ease, filter .18s ease;
+      box-shadow: 0 10px 18px rgba(0,0,0,0.28);
+      border:3px solid rgba(255,255,255,.55);
+    }
+
+    .lab-btn:hover{
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 16px 28px rgba(0,0,0,0.35);
+      filter: brightness(1.06);
+    }
+
+    .lab1{ background: linear-gradient(135deg,#00f5d4,#00bbf9); }
+    .lab2{ background: linear-gradient(135deg,#ffbe0b,#fb5607); }
+    .lab3{ background: linear-gradient(135deg,#ff006e,#ff4d6d); }
+    .lab4{ background: linear-gradient(135deg,#8338ec,#3a86ff); }
+    .lab5{ background: linear-gradient(135deg,#80ed99,#38b000); }
+    .lab6{ background: linear-gradient(135deg,#ffd6ff,#c77dff); }
+
+    .footer{
+      margin-top:28px;
+      text-align:center;
+      font-size:.95rem;
+      opacity:.95;
+      color:#f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1 class="title">ผลงานรายวิชา Computer Game Development</h1>
+    <p class="subtitle">นายวชิราวุธ ธรรมวิเศษ</p>
+
+    <section class="labs">
+      <a class="lab-btn lab1" href="lab1.html">Lab 1</a>
+      <a class="lab-btn lab2" href="#">Lab 2</a>
+      <a class="lab-btn lab3" href="#">Lab 3</a>
+      <a class="lab-btn lab4" href="#">Lab 4</a>
+      <a class="lab-btn lab5" href="#">Lab 5</a>
+      <a class="lab-btn lab6" href="#">Lab 6</a>
+    </section>
+
+    <p class="footer">ธีมสีสดใสแนวเกม 2D 🎮</p>
+  </main>
+</body>
+</html>
